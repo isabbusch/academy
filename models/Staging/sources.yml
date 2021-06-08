@@ -1,0 +1,15 @@
+
+version: 2
+
+sources:
+  - name: "academy"
+    schema: "northwind_etl"
+   
+    tables:
+      - name: products
+      - name: employees
+      - name: customers
+      - name: suppliers
+      - name: shippers
+      - name: orders
+      - name: order_details

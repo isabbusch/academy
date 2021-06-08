@@ -1,0 +1,14 @@
+version: 2
+
+# eh preciso criar um arquivo desse para cada arquivo.
+# esse teste eh chamado de squema
+
+models:
+  - name: dim_customers
+    description: tabela de dimensoes do DW da Northwind
+    columns:
+      - name: customer_sk
+        description: chave surrogate da tabela clientes
+        tests:
+          - unique
+          - not_null

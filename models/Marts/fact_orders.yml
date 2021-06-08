@@ -1,0 +1,15 @@
+version: 2
+
+# eh preciso criar um arquivo desse para cada arquivo.
+# esse teste eh chamado de squema
+
+models:
+  - name: fact_orders
+    description: tabela de fato Pedido do DW da Northwind
+    columns:
+      - name: customer_sk
+        description: chave surrogate da tabela clientes
+        tests:
+          - relationships: 
+              to: ref('dim_customers')
+              field: customer_sk
